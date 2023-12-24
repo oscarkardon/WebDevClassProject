@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Webpage</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/removeButtons.js"></script>
+    <script src="js/views.js"></script>
+    <script src="js/buildTeams.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/urlConstants.js"></script>
+    <script src="js/newsletter.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Oscar's Sports Website</h1>
+        <p>By Oscar Kardon</p>
+        <h3 id="lastHeading">This site is dedicated to the Boston Celtics, New England Revolution, New England Patriots, and Chelsea Football Club </h3>
+
+    </div>
+    <div class="container">
+        <script>
+            populateTeams();
+        </script>
+    </div>
+    <div class="newsletter">
+        <h2>Sign up for my newsletter:</h2>
+        <form  id="newsletter" method="post" action="javascript:submitNewsletter()">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <input type="checkbox" id="celtics" name="celtics" values="celtics">
+                <label for="celtics">Celtics</label><br>
+                <input type="checkbox" id="revolution" name="revolution" values="revolution">
+                <label for="revolution">Revolution</label><br>
+                <input type="checkbox" id="patriots" name="patriots" values="patriots">
+                <label for="patriots">Patriots</label><br>
+                <input type="checkbox" id="chelsea" name="chelsea" values="chelsea">
+                <label for="chelsea">Chelsea</label><br>
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name"><br>
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
+                <button type="submit" form="newsletter" value="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

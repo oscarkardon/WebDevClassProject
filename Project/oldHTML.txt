@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Webpage</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="removeButtons.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Oscar's Sports Website</h1>
+        <p>By Oscar Kardon</p>
+        <h3>This site is dedicated to the Boston Celtics, New England Revolution, New England Patriots, and Chelsea Football Club </h3>
+        <p><a href="about.html">About</a></p>
+    </div>
+    <div class="container">
+        <div class ="team" id="addcelticsId">
+            <div class="celtics" id="celticsId">
+                <div class="content">
+                    <button type="button" id="removeCeltics" onclick="removeTeam('celticsId')">X</button>
+                    <h1 class="teamname"><a href="teampages/celtics.html">Celtics</a></h1>
+                    <div class ="mainImage"><img src="logos/Boston_Celtics.svg.png" alt="Celtics logo" width="100px"></div>
+                    <p>Location: Boston</p>
+                    <p>Stadium: TD Garden</p>
+                    <p>Coach: Joe Mazulla</p>
+                    <p>Top Players:</p>
+                    <ul>
+                        <li>Jayson Tatum</li>
+                        <li>Jaylen Brown</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class ="team" id="addrevolutionId">
+            <div class="revolution" id="revolutionId">
+                <div class="content">
+                    <button type="button" id="removeRevolution" onclick="removeTeam('revolutionId')">X</button>
+                    <h1 class="teamname"><a href="teampages/revolution.html">New England Revolution</a></h1>
+                    <div class ="mainImage"><img src="logos/New-England-Revolution-logo.png" alt="Revolution logo" width="100px"></div>
+                    <p>Location: New England</p>
+                    <p>Stadium: Gillette Stadium</p>
+                    <p>Coach: Clint Peay</p>
+                    <p>Top Players:</p>
+                    <ul>
+                        <li>Carles Gil</li>
+                        <li>Gustavo Bou</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class ="team" id="addpatriotsId">
+            <div class="patriots" id="patriotsId">
+                <div class="content">
+                    <button type="button" id="removePatriots" onclick="removeTeam('patriotsId')">X</button>
+                    <h1 class="teamname"><a href="teampages/revolution.html">New England Patriots</a></h1>
+                    <div class ="mainImage"><img src="logos/2019_NE_wbg.png" alt="Patriots logo" width="100px"></div>
+                    <p>Location: New England</p>
+                    <p>Stadium: Gillette Stadium</p>
+                    <p>Coach: Bill Belichick</p>
+                    <p>Quarterback: Mac Jones</p>
+                </div>
+            </div>
+        </div>
+        <div class ="team" id="addchelseaId">
+            <div class="chelsea" id="chelseaId">
+                <div class="content">
+                    <button type="button" id="removeChelsea" onclick="removeTeam('chelseaId')">X</button>
+                    <h1 class="teamname"><a href="teampages/chelsea.html">Chelsea Football Club</a></h1>
+                    <div class ="mainImage"><img src="logos/Chelsea_FC.svg.png" alt="Chelsea logo" width="100px"></div>
+                    <p>Location: London</p>
+                    <p>Stadium: Stamford Bridge</p>
+                    <p>Mauricio Pochettino</p>
+                    <p>Top Players:</p>
+                    <ul>
+                        <li>Enzo Fernández</li>
+                        <li>Reece James</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter">
+        <h2>Sign up for my newsletter:</h2>
+        <form action="https://localhost:9014/form" method="get" id="newsletter">
+            <input type="checkbox" id="celtics" name="celtics" values="celtics">
+            <label for="celtics">Celtics</label><br>
+            <input type="checkbox" id="revolution" name="revolution" values="revolution">
+            <label for="revolution">Revolution</label><br>
+            <input type="checkbox" id="patriots" name="patriots" values="patriots">
+            <label for="patriots">Patriots</label><br>
+            <input type="checkbox" id="chelsea" name="chelsea" values="chelsea">
+            <label for="chelsea">Celtics</label><br>
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="lastName"><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"><br>
+            <button type="submit" form="newsletter" value="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

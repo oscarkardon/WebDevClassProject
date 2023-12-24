@@ -1,0 +1,77 @@
+/* colors: https://teamcolorcodes.com/ */
+
+
+.header{
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0,122,51,1) 0%, rgba(10,34,64,1) 50%, rgba(3,70,148,1) 100%);
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+body{
+    background-color: #707078;
+    font-family: sans-serif;
+}
+.team{
+    border: 1px solid #FFD700;
+    flex-grow: 1;
+}
+
+.content{
+    padding: 15px;
+    height: 600px;
+}
+.teamname{
+    text-align: center;
+}
+.celtics{
+    background-color: #007A33;
+    color: white;
+}
+.revolution{
+    background: #0A2240;
+    color: #CE0E2D;
+}
+.patriots{
+    background-color: #002244;
+    color: #B0B7BC;
+}
+.chelsea{
+    background-color: #034694;
+    color: white;
+}
+.mainImage{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mainLink{
+    text-align: center;
+}
+@media (max-width: 500px){
+    .container{
+        flex-direction: column;
+    }
+    .content{
+        height: 300px;
+        overflow: auto;
+    }
+}
+#newsletter input, #newsletter button{
+    background-color: #F7D9C4;
+}
+
+#newsletter{
+    background-color: #DFFFE4;
+}
+
+#newsletter input:hover, button:hover {
+    background-color: #E0BAA6;
+}
+
+button {
+    background-color: #FFD700;
+}
